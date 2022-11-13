@@ -56,15 +56,25 @@
     <main>
       <section class="galary">
         <div class="conteiner">
-          <h1 class="galary title">Галерея сайтів</h1>
-          <ul class="list list--btn">
+          <h1 class="galary__title">Галерея сайтів</h1>
+          <ul class="list list--galary-button">
             <li class="list-item">
-              <button type="button" class="btn filter general">Усі</button>
+              <button type="button" class="button galary__button galary__button--general">
+                Усі
+              </button>
             </li>
-            <li class="list-item"><button type="button" class="btn filter">Веб-сайти</button></li>
-            <li class="list-item"><button type="button" class="btn filter">Додатки</button></li>
-            <li class="list-item"><button type="button" class="btn filter">Дизайн</button></li>
-            <li class="list-item"><button type="button" class="btn filter">Маркетинг</button></li>
+            <li class="list-item">
+              <button type="button" class="button galary__button">Веб-сайти</button>
+            </li>
+            <li class="list-item">
+              <button type="button" class="button galary__button">Додатки</button>
+            </li>
+            <li class="list-item">
+              <button type="button" class="button galary__button">Дизайн</button>
+            </li>
+            <li class="list-item">
+              <button type="button" class="button galary__button">Маркетинг</button>
+            </li>
           </ul>
           <ul class="list-galary">
             <li class="list-item">
@@ -84,7 +94,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Технокряк</h2>
-                  <p class="text">Веб-сайт</p>
+                  <p class="galary-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -106,7 +116,7 @@
                   </div>
                   <div class="galary-desc">
                     <h2 class="galary-title">Постер New Orlean vs Golden Star</h2>
-                    <p class="text">Дизайн</p>
+                    <p class="galary-text">Дизайн</p>
                   </div>
                 </a>
               </div>
@@ -123,7 +133,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Ресторан Seafood</h2>
-                  <p class="text">Додаток</p>
+                  <p class="galary-text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -139,7 +149,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Проєкт Prime</h2>
-                  <p class="text">Маркетинг</p>
+                  <p class="galary-text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -155,7 +165,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Проєкт Boxes</h2>
-                  <p class="text">Додаток</p>
+                  <p class="galary-text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -176,7 +186,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Inspiration has no Borders</h2>
-                  <p class="text">Веб-сайт</p>
+                  <p class="galary-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -197,7 +207,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Видання Limited Edition</h2>
-                  <p class="text">Дизайн</p>
+                  <p class="galary-text">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -218,7 +228,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Проєкт LAB</h2>
-                  <p class="text">Маркетинг</p>
+                  <p class="galary-text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -239,7 +249,7 @@
                 </div>
                 <div class="galary-desc">
                   <h2 class="galary-title">Growing Business</h2>
-                  <p class="text">Додаток</p>
+                  <p class="galary-text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -258,17 +268,17 @@
               <li class="list-item">
                 <a
                   href="https://www.google.com.ua/maps/@50.3929785,30.3235373,19z?hl=ru"
-                  class="list__link map"
+                  class="list-link map"
                   target="_blank"
                   rel="noopener noreferrer"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="list-item">
-                <a href="mailto:info@devstudio.com" class="list__link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="list-link">info@devstudio.com</a>
               </li>
               <li class="list-item">
-                <a href="tel:+380961111111" class="list__link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="list-link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -316,7 +326,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="mail-input-btn">
+            <button type="submit" class="page-footer__button">
               Підписатися
               <svg class="icon-send" width="24" height="24">
                 <use xlink:href=".//images/sprite.svg#icon-icon-send"></use>
