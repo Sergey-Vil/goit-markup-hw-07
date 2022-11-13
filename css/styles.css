@@ -46,8 +46,7 @@ p,
 ul {
   margin: 0 0;
 }
-.list,
-.list-btn {
+.list {
   display: flex;
   padding-left: 0;
   justify-content: center;
@@ -106,10 +105,10 @@ ul {
   align-items: center;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav .list-item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .link {
+.site-nav .list-link {
   display: flex;
   display: block;
   align-items: center;
@@ -124,10 +123,10 @@ ul {
   color: inherit;
   text-decoration: none;
 }
-.page-header .item {
+.page-header .list-item {
   position: relative;
 }
-.current::after {
+.list-link--current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -139,30 +138,30 @@ ul {
   border-radius: 2px;
   margin-bottom: -1px;
 }
-.current:visited {
+.list-link--current:visited {
   color: var(--c-accent);
 }
 /* header contacts */
 
-.list.contacts {
+.list.list--contact {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.icon-contact {
+.icon--contact {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts .item-contact {
+.list--contact .list-item {
   align-items: center;
   justify-content: center;
 }
-.contacts .item-contact:not(:last-child) {
+.list--contact .list-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts .link {
+.list--contact .list-link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -178,8 +177,8 @@ ul {
 
 .link-map:hover,
 .link-map:focus,
-.link:hover,
-.link:focus {
+.list-link:hover,
+.list-link:focus {
   color: var(--bg-accent);
   outline: transparent;
 }
@@ -241,7 +240,7 @@ ul {
 .features__section {
   padding-bottom: 0;
 }
-.features .title {
+.features__section .title {
   display: none;
 }
 
@@ -253,10 +252,10 @@ ul {
   font-size: 36px;
   line-height: 1.17;
 }
-.features .item:not(:last-child) {
+.features__section .list-item:not(:last-child) {
   margin-right: 30px;
 }
-.features .subject::before {
+.features__section .list-subject::before {
   display: block;
   content: '';
 
@@ -267,19 +266,19 @@ ul {
   height: 120px;
   margin-bottom: 30px;
 }
-.antenna::before {
+.list-subject--antenna::before {
   background-image: url(../images/icons/antenna.svg);
 }
-.clock::before {
+.list-subject--clock::before {
   background-image: url(../images/icons/clock.svg);
 }
-.diagram::before {
+.list-subject--diagram::before {
   background-image: url(../images/icons/diagram.svg);
 }
-.astronaut::before {
+.list-subject--astronaut::before {
   background-image: url(../images/icons/astronaut.svg);
 }
-.features .subject {
+.features__section .list-subject {
   text-align: start;
   font-weight: 700;
   font-size: 14px;
@@ -287,7 +286,7 @@ ul {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-.features p {
+.features__section p {
   max-width: 270px;
   font-size: 14px;
   line-height: 1.7142;
@@ -296,7 +295,7 @@ ul {
 
 /* main works*/
 
-.works .item:not(:last-child) {
+.works .list-item:not(:last-child) {
   margin-right: 30px;
 }
 .works-pic {
@@ -327,14 +326,14 @@ img {
   background-color: var(--bg-team);
 }
 
-.team .item {
+.team .list-item {
   /* padding-bottom: 30px; */
   background: var(--bg-section);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team .item:not(:last-child) {
+.team .list-item:not(:last-child) {
   margin-right: 30px;
 }
 .team-social {
@@ -366,7 +365,7 @@ img {
   padding-bottom: 30px;
   text-align: center;
 }
-.team .subject {
+.team .list-subject {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -426,16 +425,16 @@ img {
   list-style: none;
   font-style: normal;
 }
-.address-list .item:not(:last-child) {
+.address-list .list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.link.map {
+.list-link.map {
   color: var(--white-color);
   text-decoration: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link {
+.list-link {
   font-size: 14px;
   line-height: 1.71;
   color: var(--footer-link);
@@ -531,7 +530,7 @@ text-align: center; */
   display: none;
 }
 /* Portfolio-filter */
-.list-btn .item:not(:last-child) {
+.list--btn .list-item:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 50px;
 }
@@ -559,7 +558,7 @@ text-align: center; */
   outline: transparent;
 }
 
-.list-btn .btn {
+.list--btn .btn {
   padding: 6px 22px;
   border-color: transparent;
   border-radius: 4px;
@@ -574,13 +573,13 @@ text-align: center; */
   flex-wrap: wrap;
   list-style: none;
 }
-.list-galary .item:not(:nth-child(3n + 3)) {
+.list-galary .list-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
-.list-galary .item:not(:nth-child(n + 7)) {
+.list-galary .list-item:not(:nth-child(n + 7)) {
   margin-bottom: 30px;
 }
-.list-galary .item {
+.list-galary .list-item {
   max-width: 370px;
 
   border: 1px solid #eeeeee;
