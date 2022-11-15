@@ -368,11 +368,14 @@ img {
   margin-top: 16px;
 }
 
+.header {
+  border-bottom: 1px solid var(--border-hed);
+}
+
 .header__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid var(--border-hed);
 }
 
 .header__logo {
@@ -399,6 +402,9 @@ img {
 
 .navigation__item--current {
   position: relative;
+}
+.navigation__item--current:visited {
+  color: var(--c-accent);
 }
 
 .navigation__link {
@@ -656,7 +662,7 @@ img {
   margin-right: 30px;
 }
 
-.team-desc {
+.team__desc {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
