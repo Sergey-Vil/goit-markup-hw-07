@@ -25,6 +25,9 @@
 
 .navigation__item--current {
   position: relative;
+  &:visited {
+      color: $c-accent;
+    }
 }
 
 .navigation__link {
@@ -69,6 +72,7 @@
     color: $c-accent;
   }
 }
+
 
 .contacts {
   display: flex;
